@@ -26,7 +26,7 @@ public class DcController {
     @GetMapping("/dc2")
     public String dc2() throws InterruptedException {
         // 模拟网络延时，触发 Hystrix 容错机制
-        //Thread.sleep(1000);
+        Thread.sleep(1000);
         // 获取所有在 eureka server 中注册的服务清单
         String services = "Hystrix Get Services: " + discoveryClient.getServices();
         System.out.println(services);
