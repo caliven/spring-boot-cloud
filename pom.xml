@@ -19,6 +19,7 @@
         <module>config-server-git</module>
         <module>config-client</module>
         <module>demo</module>
+        <module>api-gateway</module>
     </modules>
 
 </project>
