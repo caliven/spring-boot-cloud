@@ -6,7 +6,6 @@ import com.netflix.zuul.exception.ZuulException;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.cloud.netflix.zuul.filters.support.FilterConstants;
-import org.springframework.stereotype.Component;
 
 import javax.servlet.http.HttpServletRequest;
 
@@ -15,7 +14,7 @@ import javax.servlet.http.HttpServletRequest;
  * <p>
  * 定义了一个简单的Zuul过滤器，它实现了在请求被路由之前检查HttpServletRequest中是否有accessToken参数，若有就进行路由，若没有就拒绝访问，返回401 Unauthorized错误。
  */
-@Component
+//@Component
 public class AccessFilter extends ZuulFilter {
 
     private static Logger log = LoggerFactory.getLogger(AccessFilter.class);
