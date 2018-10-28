@@ -19,7 +19,10 @@
         <module>config-server-git</module>
         <module>config-client</module>
         <module>demo</module>
+        <module>turbine</module>
+        <module>turbine-amqp</module>
         <module>api-gateway</module>
+        <module>swagger-service</module>
     </modules>
 
 </project>
